@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('task3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.counter {
+  border: 2px solid white;
+  padding: 48px 72px;
+  width: 90%;
+  max-width: 340px;
+  box-shadow: 0 5px 10px black;
+}
+
+.cvalue {
+  font-size: 150px;
+  color: green;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.btn {
+   padding: 8px 16px;
+  border-radius: 5px;
+  background: rgb(14, 24, 107);
+  color: white;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.815);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-top: 16px;
+}

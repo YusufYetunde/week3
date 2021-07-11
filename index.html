@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 3</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<div class="counter">
+      <h1>COUNTER</h1>
+      <p class="cvalue">0</p>
+
+      <button class="btn low">LOWER COUNT</button>
+      <button class="btn add">ADD COUNT</button>
+    </div>
+    <script type="text/javascript">
+    	const cValue = document.querySelector('.cvalue');
+		const low = document.querySelector('.low');
+		const Add = document.querySelector('.add');
+
+		let counter = 0;
+
+		low.addEventListener('click', () => {
+  			if (counter > 0) {
+    			counter--;
+   	 			cValue.innerHTML = counter;
+ 			 }
+		});
+
+		Add.addEventListener('click', () => {
+  			if (counter < 50) {
+    			counter++;
+    			cValue.innerHTML = counter;
+  			}
+		});
+    </script>
+</body>
+</html>
